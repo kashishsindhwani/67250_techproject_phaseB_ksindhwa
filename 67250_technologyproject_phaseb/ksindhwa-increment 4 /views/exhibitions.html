@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="../static/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kashish Sindhwani">
+  <meta name="keywords" content="Museum, Carnegie Mellon University, Information Systems">
+  <meta name="description" content="MonoMuse exhibitions">
+  <title>Exhibitions | MonoMuse</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Garamond:wght@600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body onload="addYear()">
+  <div class="container exhibitions_container">
+
+    <header class="header">
+      <div class="site_brand">
+        <h1>MONOMUSE<br>MUSEUM</h1>
+      </div>
+
+      <div class="header_right">
+        <div class="language_box">
+          <span class="globe">🌐</span>
+          <span>English</span>
+        </div>
+
+        <a href="#" class="top_btn">Donate</a>
+        <a href="#" class="top_btn">Membership</a>
+      </div>
+    </header>
+
+    <nav class="nav_bar">
+  <a href="../index.html">Home</a>
+  <a href="explore.html">Explore</a>
+  <a href="exhibitions.html">Exhibitions</a>
+  <a href="tickets.html">Tickets</a>
+</nav>
+
+    <main class="main exhibitions_main">
+
+      <section class="exhibitions_top">
+        <div class="breadcrumb">⌂ /Exhibitions</div>
+        <div class="exhibitions_banner_text">All exhibitions are free with museum admission</div>
+      </section>
+
+      <section class="exhibition_row first_exhibition">
+        <div class="exhibition_image">
+          <img src="../static/critical-printing.jpg" alt="Colorful patterned gallery installation from the Critical Printing exhibition">
+        </div>
+
+        <div class="exhibition_text">
+          <p class="exhibition_status">Current</p>
+          <h2>Critical Printing</h2>
+          <p class="exhibition_date">January 24, 2026-May 10, 2026</p>
+          <p class="exhibition_description">
+            With its unexpected juxtapositions among little-known prints, this installation that
+            accompanies the Harvard course of Critical Thinking (AVFS 215) is designed to
+            generate experimental thinking.
+          </p>
+        </div>
+      </section>
+
+      <section class="exhibition_row second_exhibition">
+        <div class="exhibition_text">
+          <p class="exhibition_status">Current</p>
+          <h2>Edward Munch: Technically Speaking</h2>
+          <p class="exhibition_date">January 18, 2026-May 10, 2026</p>
+          <p class="exhibition_description">
+            Visitors are invited to explore Munch’s artistic process, uncovering his playful
+            approach and fascination with materiality. Edvard Munch: Technically Speaking also
+            features groundbreaking research that sheds new light on the artist’s techniques and
+            processes.
+          </p>
+        </div>
+
+        <div class="exhibition_image">
+          <img src="../static/munch.jpg" alt="Artwork featured in the Edvard Munch: Technically Speaking exhibition">
+        </div>
+      </section> <section class="past_exhibitions_section">
+  <h2 class="past_exhibitions_heading">Past Exhibitions</h2>
+
+  <div class="past_exhibitions_grid">
+    <article class="past_exhibit_card">
+      <img src="../static/sketch-shade-smudge.jpg" alt="Sketch, Shade, Smudge exhibition artwork">
+      <h3>Sketch, Shade, Smudge: Drawing from shade to black</h3>
+      <p class="past_exhibit_date">September 12,2025-January 18, 2026</p>
+      <p class="past_exhibit_desc">
+        Discover how simple tools can be powerful vehicles for artistic expression.
+      </p>
+    </article>
+
+    <article class="past_exhibit_card">
+      <img src="../static/solomon-collection.jpg" alt="The Solomon Collection exhibition artwork">
+      <h3>The Solomon Collection: Durer to Degas and Beyond</h3>
+      <p class="past_exhibit_date">September 12,2025-January 18, 2026</p>
+      <p class="past_exhibit_desc">
+        Explore a remarkable collection of artworks that span the centuries and discover how it was assembled over seven decades.
+      </p>
+    </article>
+
+    <article class="past_exhibit_card">
+      <img src="../static/edna-andrade.jpg" alt="Edna Andrade exhibition artwork">
+      <h3>Edna Andrade: Imagination is never Static</h3>
+      <p class="past_exhibit_date">September 12,2025-January 18, 2026</p>
+      <p class="past_exhibit_desc">
+        Celebrate a 20th-century artist whose innovative abstract drawings and paintings continue to inspire.
+      </p>
+    </article>
+  </div>
+</section>
+      
+    </main>
+
+    <footer class="footer">
+      <p id="copyYear"></p>
+    </footer>
+
+  </div>
+</body>
+</html>
