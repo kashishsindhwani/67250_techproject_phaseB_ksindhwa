@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script src="../static/script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Kashish Sindhwani">
+  <meta name="description" content="Support MonoMuse through donations and memberships">
+  <title>Donations | MonoMuse</title>
+
+  <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body onload="addYear()">
+<div class="container donations_container">
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="site_brand">
+      <h1>MONOMUSE<br>MUSEUM</h1>
+    </div>
+
+    <div class="header_right">
+      <div class="language_box">
+        🌐 English
+      </div>
+
+      <a href="donations.html" class="top_btn">Donate</a>
+      <a href="#membership_section" class="top_btn">Membership</a>
+    </div>
+  </header>
+
+  <!-- NAV -->
+  <nav class="nav_bar">
+    <a href="../index.html">Home</a>
+    <a href="explore.html">Explore</a>
+    <a href="exhibitions.html">Exhibitions</a>
+    <a href="tickets.html">Tickets</a>
+  </nav>
+
+  <main class="main donations_main">
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">⌂ /Donations and Memberships</div>
+
+    <!-- ===================== -->
+    <!-- DONATION SECTION -->
+    <!-- ===================== -->
+    <section class="donations_intro">
+
+      <div class="donations_left">
+        <h2 class="donations_title">Donate to MonoMuse MUSEUM</h2>
+
+        <p class="donations_text">
+          Your support helps sustain the Museum’s extraordinary level of programming,
+          conservation, and research.
+        </p>
+
+        <p class="donations_text">
+          Whether you are a guest, student, or member, your contribution helps MonoMuse
+          continue to provide engaging exhibitions and experiences.
+        </p>
+
+        <h3 class="donation_levels_title">Suggested Donation Levels</h3>
+
+        <div class="donation_amounts">
+          <button onclick="showDonationForm(5)">$5</button>
+          <button onclick="showDonationForm(10)">$10</button>
+          <button onclick="showDonationForm(20)">$20</button>
+          <button onclick="showDonationForm(50)">$50</button>
+          <button onclick="showDonationForm(75)">$75</button>
+          <button onclick="showDonationForm(100)">$100</button>
+          <button onclick="showDonationForm(250)">$250</button>
+          <button onclick="showDonationForm('custom')">Custom</button>
+        </div>
+      </div>
+
+      <div class="donations_right">
+        <img src="../static/museum.jpg" class="donations_image">
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <section id="donationFormSection" class="donation_form_section">
+      <h3>Complete Your Contribution</h3>
+
+      <form onsubmit="return submitDonationForm()">
+
+        <label>Name</label>
+        <input type="text" required>
+
+        <label>Email</label>
+        <input type="email" required>
+
+        <label>Phone</label>
+        <input type="tel" required>
+
+        <label>Billing Address</label>
+        <input type="text" required>
+
+        <div id="customAmountWrap">
+          <label>Custom Amount</label>
+          <input type="number" id="customAmount" oninput="updateDonationTotal()">
+        </div>
+
+        <p>Total: <span id="donationTotal">$0</span></p>
+
+        <button type="submit">Continue</button>
+      </form>
+    </section>
+
+   <!-- CONFIRMATION -->
+<section id="donationConfirmation" class="donation_confirmation">
+  <h3>Thank You ❤️</h3>
+  <p id="donationConfirmationText"></p>
+</section>
+
+<section id="membership_section" class="membership_section">
+  <div class="membership_left">
+    <h2 class="membership_title">Experience more as a MonuMuse Member</h2>
+
+    <p class="membership_text">
+      Discover something new on every visit and stay connected year-round.
+      Enjoy unlimited free admission, priority access to exhibitions,
+      and invitations to Members-only events.
+    </p>
+
+    <p class="membership_text">
+      Join today and become part of our global community of supporters
+      dedicated to helping MonoMuse educate and inspire visitors through
+      the power of art.
+    </p>
+
+    <h3 class="membership_subtitle">
+      Enter your email to receive membership options and exclusive benefits
+    </h3>
+
+    <input
+      type="email"
+      placeholder="Enter email here"
+      class="membership_input"
+    >
+  </div>
+
+  <div class="membership_right">
+    <img src="../static/membership.jpg" alt="MonoMuse membership supporters">
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <p id="copyYear"></p>
+</footer>
+</body>
+</html>
